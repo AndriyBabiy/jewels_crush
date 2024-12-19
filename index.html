@@ -13,19 +13,33 @@
     />
     
     <script type="module" crossorigin src="/jewels_crush/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/jewels_crush/assets/index-f9e7246a.css">
+    <link rel="stylesheet" href="/jewels_crush/assets/index-a56e0be2.css">
   </head>
   <body>
     <header class="header">
   <nav class="nav">
-    <p>Header</p>
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="./page-2.html" class="">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="">Page 3</a>
+        <a href="./page-2.html" class="">
+          <div class="logo-container">
+            <picture>
+              <!-- Same logo for all screen sizes, but different pixel densities -->
+              <source
+                srcset="
+                  ../img/all-screens/logo/header-logo_@1x.png 1x,
+                  ../img/all-screens/logo/header-logo_@2x.png 2x,
+                  ../img/all-screens/logo/header-logo_@3x.png 3x
+                "
+              />
+              <img
+                src="../img/all-screens/logo/header-logo_@1x.png"
+                class="review-img"
+                alt="avatar photo"
+              />
+            </picture>
+            <p>Jewels Crush</p>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
