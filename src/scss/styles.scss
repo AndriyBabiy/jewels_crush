@@ -54,3 +54,9 @@
     line-height: 32px; /* 177.778% */
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 130px; /* Adjust this value for the desired offset */
+}

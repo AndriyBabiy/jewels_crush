@@ -1,11 +1,10 @@
-<header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
+<section class="header-section">
+  <header>
+    <ul class="js-navList navListHeader">
       <li class="nav-item">
-        <a href="./page-2.html" class="">
+        <a href="./index.html">
           <div class="logo-container">
             <picture>
-              <!-- Same logo for all screen sizes, but different pixel densities -->
               <source
                 srcset="
                   ../img/all-screens/logo/header-logo_@1x.png 1x,
@@ -15,14 +14,27 @@
               />
               <img
                 src="../img/all-screens/logo/header-logo_@1x.png"
-                class="review-img"
                 alt="avatar photo"
               />
             </picture>
-            <p>Jewels Crush</p>
+            <p class="logo-title">Jewels Crush</p>
           </div>
         </a>
       </li>
+      <li class="js-nav-item burgerMenu">
+        <ul class="modal-navList2">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="js-burgerMenu-container modal-container">
+          <svg>
+            <use xlink:href="../img/svg/sprite.svg#icon-burger-menu"></use>
+          </svg>
+        </div>
+      </li>
     </ul>
-  </nav>
-</header>
+  </header>
+</section>
