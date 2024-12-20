@@ -65,3 +65,26 @@ screen types:
     );
   }
 }
+
+@mixin shared-font-burgerMenu {
+  font-family: 'Lilita One';
+  font-size: 18px;
+  line-height: normal;
+
+  @include media(desktop) {
+    height: 27px;
+    font-size: 24px;
+  }
+}
+
+.logo-title {
+  @include shared-font-burgerMenu;
+}
+
+.modal-navList {
+  @include shared-font-burgerMenu;
+}
+
+.modal-navList2 {
+  @include shared-font-burgerMenu;
+}

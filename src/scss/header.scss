@@ -1,20 +1,35 @@
-.header {
-  padding: 20px 0;
-  background-color: #8feaff;
-}
+.header-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 16px;
+  background-color: $_light_blue_background;
 
-.nav-list {
+  @include media(tablet) {
+    padding: 40px 72px;
+  }
+}
+.try {
+  display: flex;
+}
+.navListHeader {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
 
   @include media(tablet) {
-    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
   }
 
   @include media(desktop) {
-    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
   }
 }
 
@@ -30,14 +45,101 @@
   color: $_main_black;
 }
 
+.header-list {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}
 .nav-item.img {
   width: 60px;
 }
 
 .logo-container {
   display: flex;
-
   align-items: center;
-  justify-content: center;
   gap: 16px;
+
+  @include media(tablet) {
+    gap: 40px;
+  }
+}
+.logo-title {
+  font-family: 'Lilita One';
+  font-size: 18px;
+  line-height: normal;
+
+  @include media(tablet) {
+    height: 27px;
+    font-size: 24px;
+  }
+  @include media(desktop) {
+    height: 27px;
+    font-size: 24px;
+  }
+}
+
+.logo-title-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px 118px 0 40px;
+}
+.modal-container {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+.modal-container svg {
+  height: 100%;
+  width: 100%;
+}
+
+.headerModal {
+  display: none;
+  position: fixed;
+  top: 100;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: $_light_blue_background;
+  z-index: 999;
+}
+.headerModal.show {
+  display: flex;
+  white-space: nowrap;
+  gap: 40px;
+  padding: 40px 118px 0 40px;
+}
+.headerModal.hidden {
+  display: none;
+}
+.modal-navList2 {
+  display: none;
+
+  @include media(tablet) {
+    height: 27px;
+    font-size: 24px;
+  }
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+.header-modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+//?=====================
+.modal-desk-list {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
 }
