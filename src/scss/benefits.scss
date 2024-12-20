@@ -1,3 +1,152 @@
 .benefits {
-  padding: 20px 0;
+  padding: 40px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 24px;
+
+  @include media(desktop) {
+    padding: 80px 0;
+
+    gap: 40px;
+  }
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+
+  @include media(desktop) {
+    gap: 40px;
+  }
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include media(desktop) {
+    flex-direction: row;
+
+    gap: 24px;
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.benefits-image {
+  width: 288px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 16px;
+
+  @include media(desktop) {
+    width: 516px;
+    height: 240px;
+  }
+}
+
+.image-1 {
+  @include image_background(
+    '../img/mobile/benefits/1st-card-mobile_@1x.jpg',
+    '../img/mobile/benefits/1st-card-mobile_@2x.jpg',
+    '../img/mobile/benefits/1st-card-mobile_@3x.jpg',
+    '../img/desk/benefits/1st-card-desk_@1x.jpg',
+    '../img/desk/benefits/1st-card-desk_@2x.jpg',
+    '../img/desk/benefits/1st-card-desk_@3x.jpg'
+  );
+}
+
+.image-2 {
+  @include image_background(
+    '../img/mobile/benefits/2nd-card-mobile_@1x.jpg',
+    '../img/mobile/benefits/2nd-card-mobile_@2x.jpg',
+    '../img/mobile/benefits/2nd-card-mobile_@3x.jpg',
+    '../img/desk/benefits/2nd-card-desk_@1x.jpg',
+    '../img/desk/benefits/2nd-card-desk_@2x.jpg',
+    '../img/desk/benefits/2nd-card-desk_@3x.jpg'
+  );
+}
+
+.image-3 {
+  @include image_background(
+    '../img/mobile/benefits/3rd-card-mobile_@1x.jpg',
+    '../img/mobile/benefits/3rd-card-mobile_@2x.jpg',
+    '../img/mobile/benefits/3rd-card-mobile_@3x.jpg',
+    '../img/desk/benefits/3rd-card-desk_@1x.jpg',
+    '../img/desk/benefits/3rd-card-desk_@2x.jpg',
+    '../img/desk/benefits/3rd-card-desk_@3x.jpg'
+  );
+}
+
+.image-4 {
+  @include image_background(
+    '../img/mobile/benefits/4th-card-mobile_@1x.jpg',
+    '../img/mobile/benefits/4th-card-mobile_@2x.jpg',
+    '../img/mobile/benefits/4th-card-mobile_@3x.jpg',
+    '../img/desk/benefits/4th-card-desk_@1x.jpg',
+    '../img/desk/benefits/4th-card-desk_@2x.jpg',
+    '../img/desk/benefits/4th-card-desk_@3x.jpg'
+  );
+}
+
+.image-5 {
+  @include image_background(
+    '../img/mobile/benefits/5th-card-mobile_@1x.jpg',
+    '../img/mobile/benefits/5th-card-mobile_@2x.jpg',
+    '../img/mobile/benefits/5th-card-mobile_@3x.jpg',
+    '../img/desk/benefits/5th-card-desk_@1x.jpg',
+    '../img/desk/benefits/5th-card-desk_@2x.jpg',
+    '../img/desk/benefits/5th-card-desk_@3x.jpg'
+  );
+}
+
+.image-6 {
+  @include image_background(
+    '../img/mobile/benefits/6th-card-mobile_@1x.jpg',
+    '../img/mobile/benefits/6th-card-mobile_@2x.jpg',
+    '../img/mobile/benefits/6th-card-mobile_@3x.jpg',
+    '../img/desk/benefits/6th-card-desk_@1x.jpg',
+    '../img/desk/benefits/6th-card-desk_@2x.jpg',
+    '../img/desk/benefits/6th-card-desk_@3x.jpg'
+  );
+}
+
+.benefits-textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 288px;
+
+  @include media(desktop) {
+    width: 516px;
+  }
+}
+
+.benefits-subtitle {
+  font-family: 'Lilita One';
+  font-size: 18px;
+  line-height: normal;
+
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.benefits-text {
+  font-size: 14px;
+  line-height: 20px; /* 142.857% */
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 32px;
+  }
 }

@@ -15,35 +15,3 @@
     gap: 40px;
   }
 }
-
-.about_us-title {
-  font-family: 'Lilita One';
-  font-size: 32px;
-  line-height: normal;
-
-  @include media(desktop) {
-    font-size: 72px;
-
-    gap: 40px;
-  }
-}
-
-.about_us-text {
-  width: 288px;
-  text-align: center;
-
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-
-  @include media(desktop) {
-    width: 1056px;
-
-    font-family: Lato;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px; /* 177.778% */
-  }
-}

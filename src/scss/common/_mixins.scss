@@ -1,7 +1,7 @@
 @use 'sass:math';
 @import './breakpoints';
 /*
-screen types: 
+screen types:
     mobile,
     to-tablet
     tablet,
@@ -38,4 +38,30 @@ screen types:
   $result: math.div($_lnh, $_fsz);
 
   line-height: math.div(math.round($result * 100), 100);
+}
+
+@mixin image_background(
+  $_image_1_mobile,
+  $_image_2_mobile,
+  $_image_3_mobile,
+  $_image_1_desk,
+  $_image_2_desk,
+  $_image_3_desk
+) {
+  background-image: image-set(
+    url($_image_1_mobile) 1x,
+    url($_image_2_mobile) 2x,
+    url($_image_3_mobile) 3x
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include media(desktop) {
+    background-image: image-set(
+      url($_image_1_desk) 1x,
+      url($_image_2_desk) 2x,
+      url($_image_3_desk) 3x
+    );
+  }
 }
