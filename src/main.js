@@ -1,11 +1,11 @@
 import * as header from './js/header.js';
-
+import * as faq from './js/faq.js';
 
 $('.gallery-container').slick({
   infinite: true,
   initialSlide: 0,
-  // autoplay: true,
-  autoplaySpeed: 1000,
+  // autoplay: false,
+  // autoplaySpeed: 1000,
   focusOnSelect: true,
   centerMode: true,
   centerPadding: '20px', // Reduce padding to avoid jumping
@@ -30,10 +30,9 @@ $('.gallery-container').slick({
   nextArrow: '<button class="slick-next"></button>',
 });
 // On before slide change
-$('.gallery-container').on(
-  'beforeChange',
-  function (event, slick, currentSlide, nextSlide) {
-    console.log(nextSlide);
-  }
-);
-
+// $('.gallery-container').on(
+//   'beforeChange',
+//   function (event, slick, currentSlide, nextSlide) {
+//     console.log(slick);
+//   }
+// );
