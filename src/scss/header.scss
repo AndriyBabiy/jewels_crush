@@ -1,7 +1,11 @@
 .header-section {
   position: fixed;
-  top: 0;
+
+  display: flex;
+  justify-content: center;
+
   width: 100%;
+  top: 0;
   padding: 20px 16px;
   background-color: $_light_blue_background;
   z-index: 999;
@@ -12,6 +16,7 @@
 }
 
 .navListHeader {
+  width: 288px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,6 +30,7 @@
   }
 
   @include media(desktop) {
+    width: 1056px;
     display: flex;
     align-items: center;
     justify-content: space-between;
