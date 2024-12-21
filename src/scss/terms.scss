@@ -1,5 +1,5 @@
-.privacy-policy {
-  background-color: $_yellow_background;
+.terms {
+  background-color: $_green_background;
 
   padding: 16px 16px 40px 16px;
 
@@ -16,25 +16,22 @@
   }
 }
 
-.text-page-nav {
+.privacy-policy {
+  background-color: $_yellow_background;
+
+  padding: 16px 16px 40px 16px;
+
   display: flex;
-
-  width: 100%;
-  align-items: start;
-}
-
-.text-page-nav-link {
-  display: flex;
-  gap: 8px;
-
+  flex-direction: column;
   align-items: center;
-}
 
-.text-page-nav-text {
-  font-family: Lato;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px; /* 150% */
+  gap: 24px;
+
+  @include media(desktop) {
+    padding: 40px 0;
+
+    gap: 40px;
+  }
 }
 
 .privacy-content {

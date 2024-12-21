@@ -6,6 +6,8 @@
 @import './faq.scss';
 @import './download.scss';
 @import './footer.scss';
+@import './privacy.scss';
+@import './terms.scss';
 
 :root {
   font-family: Lato, sans-serif;
@@ -55,10 +57,20 @@ button {
   }
 }
 
+.section-heading {
+  font-family: 'Lilita One';
+  font-size: 18px;
+  line-height: normal;
+
+  @include media(desktop) {
+    font-size: 32px;
+
+    gap: 40px;
+  }
+}
+
 .section-text {
   width: 288px;
-  text-align: center;
-
   font-family: Lato;
   font-size: 14px;
   font-weight: 500;
