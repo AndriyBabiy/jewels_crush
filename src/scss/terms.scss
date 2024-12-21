@@ -10,27 +10,17 @@
   gap: 24px;
 
   @include media(desktop) {
-    padding: 40px 0;
+    padding: 40px 72px 80px 72px;
+
+    align-items: start;
 
     gap: 40px;
   }
 }
 
-.privacy-policy {
-  background-color: $_yellow_background;
-
-  padding: 16px 16px 40px 16px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  gap: 24px;
-
+.terms-title {
   @include media(desktop) {
-    padding: 40px 0;
-
-    gap: 40px;
+    padding-top: 40px;
   }
 }
 
