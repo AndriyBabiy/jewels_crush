@@ -87,11 +87,3 @@
     text-align: start;
   }
 }
-
-.google_play_button_link {
-  width: 136px;
-
-  @include media(desktop) {
-    width: 246px;
-  }
-}

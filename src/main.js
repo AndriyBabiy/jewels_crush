@@ -1,5 +1,6 @@
 import * as header from './js/header.js';
 
+
 $('.gallery-container').slick({
   infinite: true,
   initialSlide: 0,
@@ -35,3 +36,4 @@ $('.gallery-container').on(
     console.log(nextSlide);
   }
 );
+
