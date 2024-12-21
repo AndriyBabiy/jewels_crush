@@ -1,3 +1,113 @@
-.gallery {
-  padding: 20px 0;
+.gallery-section {
+  background-color: $_yellow_background;
+  padding: 20px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include media(desktop) {
+    padding: 40px 72px;
+  }
+}
+.section-title {
+  margin-bottom: 50px;
+}
+//container for whole gallery
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 1;
+  width: 288px;
+
+  @include media(desktop) {
+    width: 1056px;
+  }
+}
+
+.slick-slider {
+  border-radius: 16px;
+  padding: 0;
+}
+
+//ul for images
+.slick-list {
+  padding: 0 !important;
+  // width: 120px;
+}
+
+//each image container
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out; // Smooth transition for margin
+  margin: 0 15px; // Ensure consistent margin between slides
+  @include media(desktop) {
+    margin: 0 12px;
+  }
+}
+
+.slick-track {
+  display: flex;
+  justify-content: center; // Ensure slides are centered
+  width: 100%; // Ensure track takes up the full width
+  margin: 0; // Center the track
+}
+
+//sides images
+.slick-slide img {
+  width: 240px; /* Base size for all images */
+  max-width: 100%; /* Ensure responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center images */
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out; /* Smooth resizing */
+
+  @include media(desktop) {
+    width: 600px;
+  }
+}
+
+//center image
+.slick-center img {
+  transform: scale(1); /* Make the center image larger */
+}
+
+//space between slides
+.slick-slide {
+  margin: 0 15px;
+  @include media(desktop) {
+    margin: 0 12px;
+  }
+}
+
+// Custom buttons
+.gallery-container .slick-prev {
+  background: url('../img/svg/arrow-button-left.svg') no-repeat center center !important;
+  background-size: contain !important;
+  width: 40px !important;
+  height: 40px !important;
+  border: none !important;
+  outline: none !important;
+  z-index: 10 !important;
+  left: -15px;
+}
+
+.gallery-container .slick-next {
+  background: url('../img/svg/arrow-button-right.svg') no-repeat center center !important;
+  background-size: contain !important;
+  width: 40px !important;
+  height: 40px !important;
+  border: none !important;
+  outline: none !important;
+  z-index: 10 !important;
+  right: -15px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: none; /* Remove default arrows */
 }
