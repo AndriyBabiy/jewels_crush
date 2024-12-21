@@ -58,7 +58,6 @@ function modalToggle() {
 }
 
 function closeModalIfDesktop() {
-  console.log('first');
   const modal = document.querySelector('.headerModal');
   const isDesktop = window.innerWidth >= 1200;
 
