@@ -1,3 +1,108 @@
 .faq {
-  padding: 20px 0;
+  padding: 40px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 24px;
+
+  @include media(desktop) {
+    padding: 80px 0;
+
+    gap: 40px;
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-elem {
+  position: relative;
+
+  padding: 16px 0;
+
+  width: 288px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $_main_black;
+  }
+
+  &:last-child ::after {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $_main_black;
+  }
+
+  @include media(desktop) {
+    padding: 24px 90px;
+
+    width: 1056px;
+
+    gap: 24px;
+  }
+}
+
+.faq-title {
+  font-family: 'Lilita One';
+  font-size: 18px;
+  line-height: normal;
+
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.faq-collapse {
+  height: 20px;
+  width: 20px;
+
+  background-image: url('../img/svg/plus-btn.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include media(desktop) {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.active {
+  background-image: url('../img/svg/minus-btn.svg');
+}
+
+.faq-text {
+  display: none;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  @include media(desktop) {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px; /* 177.778% */
+  }
+}
+
+.faq-elem:last-child .faq-text {
+  display: block;
 }

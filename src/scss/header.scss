@@ -4,6 +4,7 @@
   width: 100%;
   padding: 20px 16px;
   background-color: $_light_blue_background;
+  z-index: 999;
 
   @include media(tablet) {
     padding: 40px 72px;
