@@ -10,7 +10,9 @@
   gap: 24px;
 
   @include media(desktop) {
-    padding: 40px 0;
+    padding: 40px 72px 80px 72px;
+
+    align-items: start;
 
     gap: 40px;
   }
@@ -35,6 +37,12 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 24px; /* 150% */
+}
+
+.privacy-title {
+  @include media(desktop) {
+    padding-top: 40px;
+  }
 }
 
 .privacy-content {
