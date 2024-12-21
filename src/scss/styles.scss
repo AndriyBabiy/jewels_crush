@@ -23,6 +23,26 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.google_play_button_link {
+  width: 136px;
+
+  @include media(desktop) {
+    width: 246px;
+  }
+}
+
+button {
+  display: block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background: $_main_white;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+}
+
 .section-title {
   font-family: 'Lilita One';
   font-size: 32px;
