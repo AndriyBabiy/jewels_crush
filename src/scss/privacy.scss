@@ -1,6 +1,7 @@
 .privacy-policy {
   background-color: $_yellow_background;
-
+  width: 320px;
+  margin: 0 auto;
   padding: 16px 16px 40px 16px;
 
   display: flex;
@@ -10,9 +11,8 @@
   gap: 24px;
 
   @include media(desktop) {
+    width: 1200px;
     padding: 40px 72px 80px 72px;
-
-    align-items: start;
 
     gap: 40px;
   }

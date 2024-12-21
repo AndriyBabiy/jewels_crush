@@ -1,6 +1,9 @@
 .terms {
   background-color: $_green_background;
 
+  width: 320px;
+
+  margin: 0 auto;
   padding: 16px 16px 40px 16px;
 
   display: flex;
@@ -10,9 +13,9 @@
   gap: 24px;
 
   @include media(desktop) {
-    padding: 40px 72px 80px 72px;
+    width: 1200px;
 
-    align-items: start;
+    padding: 40px 72px 80px 72px;
 
     gap: 40px;
   }
