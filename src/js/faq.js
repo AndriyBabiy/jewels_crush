@@ -3,8 +3,6 @@ const refs = {
   faqText: document.getElementsByClassName('faq-text'),
 };
 
-console.log(refs.faqButton);
-
 for (let i = 0; i < refs.faqButton.length; i++) {
   refs.faqButton[i].addEventListener('click', function () {
     this.classList.toggle('active');
