@@ -30,8 +30,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  gap: 16px;
-
   &::before {
     content: '';
     position: absolute;
@@ -56,9 +54,13 @@
     padding: 24px 90px;
 
     width: 1056px;
-
-    gap: 24px;
   }
+}
+
+.faq-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .faq-title {
@@ -90,7 +92,7 @@
   }
 }
 
-.faq-text {
+.faq-answer {
   max-height: 0;
   overflow: hidden;
   transition: $_default-transition;
@@ -105,6 +107,11 @@
   }
 }
 
-.faq-elem.active-faq .faq-text {
+.faq-elem.active-faq .faq-answer {
+  padding-top: 16px;
   max-height: 400px;
+
+  @include media(desktop) {
+    padding-top: 24px;
+  }
 }
