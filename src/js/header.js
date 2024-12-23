@@ -9,13 +9,33 @@ function createModal() {
   modal.classList.add('headerModal', 'modal-navList');
   modal.innerHTML = `
       <ul class='header-modal-list'>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about-us">About Us</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li class='js-anchor'><a href="#home">Home</a></li>
+        <li class='js-anchor'><a href="#about-us">About Us</a></li>
+        <li class='js-anchor'><a href="#benefits">Benefits</a></li>
+        <li class='js-anchor'><a href="#gallery">Gallery</a></li>
+        <li class='js-anchor'><a href="#faq">FAQ</a></li>
       </ul>
   `;
+  modal.querySelector('.header-modal-list').addEventListener('click', event => {
+    const clickedElement = event.target;
+    console.log('clickedElement', clickedElement);
+
+    if (clickedElement.tagName === 'LI') {
+      const anchor = clickedElement.querySelector('a');
+      console.log('anchor', anchor);
+      if (anchor) {
+        modalToggle();
+
+        setTimeout(() => {
+          // Now navigate to the section
+          window.location.hash = anchor.getAttribute('href'); //navigation
+        }, 100);
+      }
+    } else if (clickedElement.tagName === 'A') {
+      modalToggle(); // Close the modal when A is clicked
+    }
+  });
+
   return modal;
 }
 
@@ -24,12 +44,12 @@ function updateBurgerIcon(isOpen) {
   if (isOpen) {
     svgElement.setAttribute(
       'xlink:href',
-      '../img/svg/sprite.svg#icon-close-cross'
+      './img/svg/sprite.svg#icon-close-cross'
     );
   } else {
     svgElement.setAttribute(
       'xlink:href',
-      '../img/svg/sprite.svg#icon-burger-menu'
+      './img/svg/sprite.svg#icon-burger-menu'
     );
   }
 }
@@ -37,7 +57,6 @@ function modalToggle() {
   let modal = document.querySelector('.headerModal');
   const isDesktop = window.innerWidth >= 1200;
 
-  // Create modal if it doesn't exist
   if (!modal) {
     modal = createModal();
     refs.navList.insertAdjacentElement('afterend', modal);
@@ -51,7 +70,6 @@ function modalToggle() {
       updateBurgerIcon(false);
     }
   } else {
-    // If on mobile, toggle the modal visibility
     modal.classList.toggle('show');
     updateBurgerIcon(!isOpen);
   }

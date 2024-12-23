@@ -1,38 +1,22 @@
 import * as header from './js/header.js';
 import * as faq from './js/faq.js';
+import { initializeSlickSlider } from './js/swiper.js';
+initializeSlickSlider('.gallery-container');
 
-$('.gallery-container').slick({
-  infinite: true,
-  initialSlide: 0,
-  // autoplay: false,
-  // autoplaySpeed: 1000,
-  focusOnSelect: true,
-  centerMode: true,
-  centerPadding: '20px', // Reduce padding to avoid jumping
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        centerPadding: '20px', // Reduce padding on smaller screens
-      },
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-        centerPadding: '20px', // Reduce padding on larger screens
-      },
-    },
-  ],
-  prevArrow: '<button class="slick-prev"></button>',
-  nextArrow: '<button class="slick-next"></button>',
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+//AOS
+AOS.init({
+  offset: 100, // Offset (in pixels) from the original trigger point
+  delay: 150, // Delay (in milliseconds) before the animation starts
+  duration: 1000, // Duration (in milliseconds) of the animation
+  // easing: 'ease', // Easing function for the animation
+  once: false, // Whether animation should happen only once - while scrolling down
+  // mirror: false, // Whether elements should animate out while scrolling past them
+  // anchorPlacement: 'top-bottom', // Defines which position of the element triggers the animation
 });
-// On before slide change
-// $('.gallery-container').on(
-//   'beforeChange',
-//   function (event, slick, currentSlide, nextSlide) {
-//     console.log(slick);
-//   }
-// );
+
+// document.addEventListener('click', e => {
+//   console.log(e.target);
+// });

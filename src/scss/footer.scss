@@ -28,6 +28,14 @@
     @include font(20, 20);
   }
 }
+.footer-link {
+  transition: $_default-transition;
+  &:hover {
+    // text-decoration: underline;
+    color: $_main_white; /* Use variable for color */
+    transform: scale(1.1);
+  }
+}
 
 .footer-text {
   text-align: center;
