@@ -13,7 +13,7 @@
     />
 
     <!--  Slick -->
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
@@ -22,12 +22,14 @@
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
+    /> -->
     <!--  Slick -->
 
     
-    <script type="module" crossorigin src="/jewels_crush/assets/main-ff0b24fd.js"></script>
-    <link rel="stylesheet" href="/jewels_crush/assets/main-8285ba77.css">
+    <script type="module" crossorigin src="/jewels_crush/assets/vendor-3cdcb1da.js"></script>
+    <script type="module" crossorigin src="/jewels_crush/assets/main-6a2f5c55.js"></script>
+    <link rel="stylesheet" href="/jewels_crush/assets/main-6ebcfd57.css">
+    <link rel="stylesheet" href="/jewels_crush/assets/vendor-3586bed5.css">
   </head>
   <body>
     <section class="header-section">
@@ -59,7 +61,7 @@
         </ul>
         <div class="js-burgerMenu-container modal-container">
           <svg>
-            <use xlink:href="/jewels_crush/assets/sprite-7a36bc1f.svg#icon-burger-menu"></use>
+            <use xlink:href="/jewels_crush/assets/sprite-2d4b452b.svg#icon-burger-menu"></use>
           </svg>
         </div>
       </li>
@@ -79,9 +81,11 @@
     <a
       href="https://play.google.com/store/apps/details?id=com.yfactorysoft.JewelsPirate"
       target="_blank"
-      class="google_play_button_link"
+      class="google_play_button_link hero-btn"
     >
-      <img src="/jewels_crush/assets/play-btn-622e4cdb.svg" alt="Google Play Link" />
+      <div class="play-btn-container">
+        <img src="/jewels_crush/assets/play-btn-2-e2c3811e.svg" alt="Google Play Link" />
+      </div>
     </a>
   </div>
 </section>
@@ -102,44 +106,51 @@
   <h2 class="section-title">Benefits</h2>
   <ul class="benefits-list">
     <li class="benefits-item">
-      <div class="benefits-image image-1"></div>
-      <div class="benefits-textbox">
-        <h3 class="benefits-subtitle">Engaging Gameplay:</h3>
-        <p class="benefits-text">
-          Enjoy a fast-paced and satisfying puzzle experience where matching
-          jewels creates vibrant effects and brings new challenges. The simple
-          yet addictive mechanics keep players hooked, ensuring an exciting
-          journey through each level.
-        </p>
+      <div data-aos="fade-right">
+        <div class="benefits-image image-1"></div>
+        <div class="benefits-textbox">
+          <h3 class="benefits-subtitle">Engaging Gameplay:</h3>
+          <p class="benefits-text">
+            Enjoy a fast-paced and satisfying puzzle experience where matching
+            jewels creates vibrant effects and brings new challenges. The simple
+            yet addictive mechanics keep players hooked, ensuring an exciting
+            journey through each level.
+          </p>
+        </div>
       </div>
     </li>
     <li class="benefits-item">
-      <div class="benefits-image image-2"></div>
-      <div class="benefits-textbox">
-        <h3 class="benefits-subtitle">Stunning Visuals:</h3>
-        <p class="benefits-text">
-          Dive into a world of colorful gems, with dynamic animations and
-          sparkling effects that bring the jewel-matching gameplay to life. Each
-          level is a feast for the eyes, filled with brilliant colors and
-          intricate designs.
-        </p>
+      <div data-aos="fade-left">
+        <div class="benefits-image image-2"></div>
+        <div class="benefits-textbox">
+          <h3 class="benefits-subtitle">Stunning Visuals:</h3>
+          <p class="benefits-text">
+            Dive into a world of colorful gems, with dynamic animations and
+            sparkling effects that bring the jewel-matching gameplay to life.
+            Each level is a feast for the eyes, filled with brilliant colors and
+            intricate designs.
+          </p>
+        </div>
+      </div>
+    </li>
+
+    <li class="benefits-item">
+      <div data-aos="fade-right">
+        <div class="benefits-image image-3"></div>
+        <div class="benefits-textbox">
+          <h3 class="benefits-subtitle">Challenging Puzzles:</h3>
+          <p class="benefits-text">
+            Test your skills with increasingly complex levels, each designed to
+            challenge your strategy and quick thinking. The puzzles become
+            progressively harder, requiring you to think ahead and plan your
+            moves carefully.
+          </p>
+        </div>
       </div>
     </li>
     <li class="benefits-item">
-      <div class="benefits-image image-3"></div>
-      <div class="benefits-textbox">
-        <h3 class="benefits-subtitle">Challenging Puzzles:</h3>
-        <p class="benefits-text">
-          Test your skills with increasingly complex levels, each designed to
-          challenge your strategy and quick thinking. The puzzles become
-          progressively harder, requiring you to think ahead and plan your moves
-          carefully.
-        </p>
-      </div>
-    </li>
-    <li class="benefits-item">
-      <div class="benefits-image image-4"></div>
-      <div class="benefits-textbox">
+      <div class="benefits-image image-4" data-aos="fade-left"></div>
+      <div class="benefits-textbox" data-aos="fade-left">
         <h3 class="benefits-subtitle">Rewards and Power-ups:</h3>
         <p class="benefits-text">
           Unlock powerful boosts and rewards as you progress through levels.
@@ -149,8 +160,8 @@
       </div>
     </li>
     <li class="benefits-item">
-      <div class="benefits-image image-5"></div>
-      <div class="benefits-textbox">
+      <div class="benefits-image image-5" data-aos="fade-right"></div>
+      <div class="benefits-textbox" data-aos="fade-right">
         <h3 class="benefits-subtitle">Offline Play:</h3>
         <p class="benefits-text">
           Play whenever and wherever you want, without needing an internet
@@ -160,8 +171,8 @@
       </div>
     </li>
     <li class="benefits-item">
-      <div class="benefits-image image-6"></div>
-      <div class="benefits-textbox">
+      <div class="benefits-image image-6" data-aos="fade-left"></div>
+      <div class="benefits-textbox" data-aos="fade-left">
         <h3 class="benefits-subtitle">Social Features:</h3>
         <p class="benefits-text">
           Connect with friends, share your progress, and compete to see who can
@@ -173,20 +184,7 @@
   </ul>
 </section>
 
-    <!-- <section class="gallery" id="gallery">
-  <h2 class="section-title">Gallery</h2>
-
-  <div class="gallery-container">
-    <div>
-      <img src="../img/desk/gallery/1gallery_x1.png" alt="Gallery Image 1" />
-    </div>
-    <div>
-      <img src="../img/desk/gallery/1gallery_x1.png" alt="Gallery Image 1" />
-    </div>
-  </div>
-</section> -->
-<!-- ?============================= -->
-<section class="gallery-section" id="gallery">
+    <section class="gallery-section" id="gallery">
   <h2 class="section-title gallery-title">Gallery</h2>
 
   <div class="gallery-container">
@@ -265,9 +263,11 @@
   <a
     href="https://play.google.com/store/apps/details?id=com.yfactorysoft.JewelsPirate"
     target="_blank"
-    class="google_play_button_link"
+    class="google_play_button_link hero-btn"
   >
-    <img src="/jewels_crush/assets/play-btn-622e4cdb.svg" alt="Google Play Link" />
+    <div class="play-btn-container">
+      <img src="/jewels_crush/assets/play-btn-2-e2c3811e.svg" alt="Google Play Link" />
+    </div>
   </a>
 </section>
 
@@ -275,8 +275,12 @@
   <footer>
     <nav class="footer-nav">
       <ul class="nav-list-footer">
-        <li><a href="./privacy-page.html">Privacy Policy</a></li>
-        <li><a href="./terms-page.html">Terms and Conditions</a></li>
+        <li class="footer-link">
+          <a href="./privacy-page.html">Privacy Policy</a>
+        </li>
+        <li class="footer-link">
+          <a href="./terms-page.html">Terms and Conditions</a>
+        </li>
       </ul>
       <p class="footer-text">All rights reserved topadventurepath.com | 2024</p>
     </nav>
@@ -285,14 +289,14 @@
 
 
     <!-- Slick JS -->
-    <script
+    <!-- <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.6.0.min.js"
     ></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    ></script> -->
     <!-- Slick JS -->
 
     
