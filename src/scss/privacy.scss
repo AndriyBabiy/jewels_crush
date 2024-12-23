@@ -41,6 +41,7 @@
 
 .privacy-title {
   @include media(desktop) {
+    align-self: flex-start;
     padding-top: 40px;
   }
 }
