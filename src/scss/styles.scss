@@ -101,3 +101,15 @@ section {
 .terms-container {
   background-color: $_green_background;
 }
+
+.text-page-nav {
+  display: flex;
+
+  width: 100%;
+  align-items: start;
+  transition: $_default-transition;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

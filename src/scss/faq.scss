@@ -84,14 +84,16 @@
     height: 40px;
     width: 40px;
   }
-}
 
-.active {
-  background-image: url('../img/svg/minus-btn.svg');
+  &.active {
+    background-image: url('../img/svg/minus-btn.svg');
+  }
 }
 
 .faq-text {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
 
   font-size: 14px;
   line-height: 20px;
@@ -99,10 +101,10 @@
   @include media(desktop) {
     font-size: 18px;
     font-weight: 600;
-    line-height: 32px; /* 177.778% */
+    line-height: 32px;
   }
 }
 
-.faq-elem:last-child .faq-text {
-  display: block;
+.faq-elem.active-faq .faq-text {
+  max-height: 400px;
 }
