@@ -93,7 +93,7 @@
 .faq-text {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+  transition: $_default-transition;
 
   font-size: 14px;
   line-height: 20px;
