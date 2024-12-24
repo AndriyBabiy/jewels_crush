@@ -19,7 +19,7 @@
 }
 
 .navListHeader {
-  width: 288px;
+  width: px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 35px;
   }
 
   @include media(desktop) {
@@ -74,14 +74,14 @@
   font-size: 18px;
   line-height: normal;
 
-  @include media(tablet) {
-    height: 27px;
-    font-size: 24px;
-  }
-  @include media(desktop) {
-    height: 27px;
-    font-size: 24px;
-  }
+  // @include media(tablet) {
+  //   height: 27px;
+  //   font-size: 24px;
+  // }
+  // @include media(desktop) {
+  //   height: 27px;
+  //   font-size: 24px;
+  // }
 }
 
 .logo-title-container {
