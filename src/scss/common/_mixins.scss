@@ -71,10 +71,10 @@ screen types:
   font-size: 18px;
   line-height: normal;
 
-  @include media(desktop) {
-    height: 27px;
-    font-size: 24px;
-  }
+  // @include media(desktop) {
+  //   height: 27px;
+  //   font-size: 24px;
+  // }
 }
 
 .logo-title {
