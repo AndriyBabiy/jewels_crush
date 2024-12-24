@@ -51,7 +51,7 @@ function updateBurgerIcon(isOpen) {
   if (isOpen) {
     svgElement.setAttribute(
       'xlink:href',
-      '../img/svg/sprite.svg#icon-close-cross'
+      './img/svg/sprite.svg#icon-close-cross'
     );
   } else {
     svgElement.setAttribute(
