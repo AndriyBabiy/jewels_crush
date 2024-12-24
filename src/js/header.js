@@ -47,19 +47,22 @@ function createModal() {
 }
 
 function updateBurgerIcon(isOpen) {
-  const svgElement = refs.navBurgerMenu.querySelector('use');
+  const svgElement = refs.navBurgerMenu.querySelector('div.burgerMenu-icon');
   if (isOpen) {
-    svgElement.setAttribute(
-      'xlink:href',
-      './img/svg/sprite.svg#icon-close-cross'
-    );
+    // svgElement.setAttribute(
+    //   'xlink:href',
+    //   './img/svg/sprite.svg#icon-close-cross'
+    // );
+    svgElement.classList.add('open-icon');
   } else {
-    svgElement.setAttribute(
-      'xlink:href',
-      './img/svg/sprite.svg#icon-burger-menu'
-    );
+    // svgElement.setAttribute(
+    //   'xlink:href',
+    //   './img/svg/sprite.svg#icon-burger-menu'
+    // );
+    svgElement.classList.remove('open-icon');
   }
 }
+
 function modalToggle() {
   let modal = document.querySelector('.headerModal');
   const isDesktop = window.innerWidth >= 1200;

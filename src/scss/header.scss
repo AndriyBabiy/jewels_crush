@@ -105,6 +105,21 @@
     display: none;
   }
 }
+
+.burgerMenu-icon {
+  height: 100%;
+  width: 100%;
+
+  background-image: url('../img/svg/burger-menu.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &.open-icon {
+    background-image: url('../img/svg/close-cross-btn.svg');
+  }
+}
+
 .modal-container svg {
   height: 100%;
   width: 100%;
