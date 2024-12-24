@@ -1,7 +1,10 @@
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+
 const refs = {
   navBurgerMenu: document.querySelector('.js-burgerMenu-container'),
   navList: document.querySelector('.js-navList'),
   navItemMenu: document.querySelector('.js-nav-item'),
+  navBackdrop: document.querySelector('.headerModal'),
 };
 
 function createModal() {
@@ -16,6 +19,11 @@ function createModal() {
         <li class='js-anchor'><a href="#faq">FAQ</a></li>
       </ul>
   `;
+  modal.addEventListener('click', event => {
+    if (event.target === modal) {
+      modalToggle();
+    }
+  });
   modal.querySelector('.header-modal-list').addEventListener('click', event => {
     const clickedElement = event.target;
     console.log('clickedElement', clickedElement);
@@ -27,15 +35,14 @@ function createModal() {
         modalToggle();
 
         setTimeout(() => {
-          // Now navigate to the section
-          window.location.hash = anchor.getAttribute('href'); //navigation
+          window.location.hash = anchor.getAttribute('href');
         }, 100);
       }
     } else if (clickedElement.tagName === 'A') {
-      modalToggle(); // Close the modal when A is clicked
+      modalToggle();
     }
   });
-
+  disableBodyScroll(modal);
   return modal;
 }
 
@@ -67,10 +74,16 @@ function modalToggle() {
   if (isDesktop) {
     if (isOpen) {
       modal.classList.remove('show');
+      enableBodyScroll(modal);
       updateBurgerIcon(false);
     }
   } else {
     modal.classList.toggle('show');
+    if (!isOpen) {
+      disableBodyScroll(modal);
+    } else {
+      enableBodyScroll(modal);
+    }
     updateBurgerIcon(!isOpen);
   }
 }

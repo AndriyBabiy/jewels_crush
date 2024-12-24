@@ -11,21 +11,21 @@ export function initializeSlickSlider(selector) {
     initialSlide: 0,
     focusOnSelect: true,
     centerMode: true,
-    centerPadding: '20px', // Reduce padding to avoid jumping
+    centerPadding: '20px',
     slidesToShow: 3,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          centerPadding: '20px', // Reduce padding on smaller screens
+          centerPadding: '20px',
         },
       },
       {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          centerPadding: '20px', // Reduce padding on larger screens
+          centerPadding: '20px',
         },
       },
     ],

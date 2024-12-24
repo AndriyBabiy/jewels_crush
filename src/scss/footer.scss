@@ -1,7 +1,6 @@
 .footer-section {
   display: flex;
   justify-content: center;
-  // padding: 24px 16px;
   background-color: $_dark_blue_background;
 }
 .footer-nav {
@@ -31,8 +30,7 @@
 .footer-link {
   transition: $_default-transition;
   &:hover {
-    // text-decoration: underline;
-    color: $_main_white; /* Use variable for color */
+    color: $_main_white; 
     transform: scale(1.1);
   }
 }

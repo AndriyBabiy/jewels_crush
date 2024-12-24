@@ -35,21 +35,19 @@
 }
 
 ul.bullet-point {
-  list-style: none; /* turn off default browser bullet */
-  padding-left: 0; /* remove default left padding */
-  margin-left: 1.5em; /* shift your entire list to the right if needed */
+  list-style: none;
+  padding-left: 0;
+  margin-left: 1.5em;
 }
 
 li.bullet-point {
   position: relative;
-  margin: 0.5em 0; /* vertical spacing around bullet items */
-  padding-left: 1.2em; /* space so text doesn't run into bullet */
+  margin: 0.5em 0;
+  padding-left: 1.2em;
 }
 
-/* Insert a custom bullet with before or after */
 li.bullet-point::before {
-  content: '•'; /* your bullet symbol */
+  content: '•';
   position: absolute;
   left: 0.3em;
-  /* Adjust top/bottom as needed to align bullet with text */
 }
