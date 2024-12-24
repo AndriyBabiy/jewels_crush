@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Engaging Gameplay",
+    "description": "Enjoy a fast-paced and satisfying puzzle experience where matching jewels creates vibrant effects and brings new challenges. The simple yet addictive mechanics keep players hooked, ensuring an exciting journey through each level.",
+    "imageClass": "image-1"
+  },
+  {
+    "title": "Stunning Visuals",
+    "description": "Dive into a world of colorful gems, with dynamic animations and sparkling effects that bring the jewel-matching gameplay to life. Each level is a feast for the eyes, filled with brilliant colors and intricate designs.",
+    "imageClass": "image-2"
+  },
+  {
+    "title": "Challenging Puzzles",
+    "description": "Test your skills with increasingly complex levels, each designed to challenge your strategy and quick thinking. The puzzles become progressively harder, requiring you to think ahead and plan your moves carefully.",
+    "imageClass": "image-3"
+  },
+  {
+    "title": "Rewards and Power-ups",
+    "description": "Unlock powerful boosts and rewards as you progress through levels. These special items make it easier to complete difficult puzzles and help you reach new heights in the game.",
+    "imageClass": "image-4"
+  },
+  {
+    "title": "Offline Play",
+    "description": "Play whenever and wherever you want, without needing an internet connection. Whether you're at home, on a trip, or just waiting for an appointment, you can enjoy Jewels Crush anytime.",
+    "imageClass": "image-5"
+  },
+  {
+    "title": "Social Features",
+    "description": "Connect with friends, share your progress, and compete to see who can achieve the highest score. Participate in leaderboards and challenge others to see who’s the ultimate jewel crusher.",
+    "imageClass": "image-6"
+  }
+]
