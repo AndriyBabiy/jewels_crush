@@ -24,4 +24,4 @@ import{e as d,d as f,A as h,$ as m}from"./vendor-f760068b.js";(function(){const 
       </ul>
     </section>
   `}function g(){const e=document.getElementById("benefits"),i=window.innerWidth<=1199?b(v):w;e.innerHTML=i,h.refresh()}g();window.addEventListener("resize",g);function L(e){m(e).slick({infinite:!0,initialSlide:0,focusOnSelect:!0,centerMode:!0,centerPadding:"20px",slidesToShow:3,responsive:[{breakpoint:768,settings:{slidesToShow:1,centerPadding:"20px"}},{breakpoint:1200,settings:{slidesToShow:3,centerPadding:"20px"}}],prevArrow:'<button class="slick-prev"></button>',nextArrow:'<button class="slick-next"></button>'})}L(".gallery-container");
-//# sourceMappingURL=main-671f7044.js.map
+//# sourceMappingURL=main-8109614f.js.map
